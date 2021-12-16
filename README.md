@@ -1,6 +1,8 @@
 #  [Advent-Of-Code-2021](https://adventofcode.com/) ![](https://img.shields.io/badge/days%20completed-3-red) ![](https://img.shields.io/badge/stars%20⭐-6-yellow)
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
+![image](https://user-images.githubusercontent.com/55499929/146315763-b4282c42-4024-408a-bb05-f2d86c4b3563.png)
+
 Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. People use them as a speed contest, interview prep, company training, university coursework, practice problems, or to challenge each other.
 
 You don't need a computer science background to participate - just a little programming knowledge and some problem solving skills will get you pretty far. Nor do you need a fancy computer; every problem has a solution that completes in at most 15 seconds on ten-year-old hardware.

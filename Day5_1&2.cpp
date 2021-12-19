@@ -24,14 +24,15 @@ void processInput(vector<line> &v)
                 stringstream stream2(s);
                 while(getline(stream2, s, ','))
                 {
+                    int val = stoi(s, 0, 10);
                     if(i == 0) {
-                        l.x1 = stoi(s, 0, 10);
+                        l.x1 = val;
                     } else if (i == 1) {
-                        l.y1 = stoi(s, 0, 10);
+                        l.y1 = val;
                     } else if (i == 2) {
-                        l.x2 = stoi(s, 0, 10);
+                        l.x2 = val;
                     } else {
-                        l.y2 = stoi(s, 0, 10);
+                        l.y2 = val;
                     }
                     i++;
                 }
@@ -49,6 +50,7 @@ int main() {
 
     for(auto l : v)
     {
+        // horizontal
         if(l.x1 == l.x2)
         {
             if(l.y1 > l.y2)
@@ -62,6 +64,7 @@ int main() {
                     vent[{l.x1, i}]++;
                 }
         }
+        // vertical
         else if(l.y1 == l.y2)
         {
             if(l.x1 > l.x2)
@@ -74,6 +77,23 @@ int main() {
                 {
                     vent[{i, l.y1}]++;
                 }
+        }
+        // diagonal
+        else{
+            int x_itr = (l.x1 > l.x2) ? -1 : 1;
+            int y_itr = (l.y1 > l.y2) ? -1 : 1;
+
+            int x = l.x1;
+            int y = l.y1;
+
+            while(x != l.x2 && y != l.y2)
+            {
+                vent[{x, y}]++;
+                x += x_itr;
+                y += y_itr;
+            }
+
+            vent[{x, y}]++;
         }
     }
 

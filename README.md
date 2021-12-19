@@ -29,5 +29,7 @@ Adding my C++ sols here just for fun xD.
   > [Part 1 & 2](https://adventofcode.com/2021/day/6)
 - [x] Day 7: The Treachery of Whales 
   > [Part 1 & 2](https://adventofcode.com/2021/day/7)
+- [x] Day 8: Seven Segment Search
+  > [Part 1 & 2](https://adventofcode.com/2021/day/8)
 
 

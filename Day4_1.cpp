@@ -38,7 +38,32 @@ void processBoards(vector<vector<vector<int>>> &boards)
     }
 }
 
-void updateBoards(vector<vector<vector<int>>> &boards, int num)
+int checkBoard(vector<vector<int>> board, int i, int j)
+{
+    int sumR = 0;
+    int sumC = 0;
+    for(int k = 0; k < 5; k++)
+    {
+        sumR += board[i][k];
+        sumC += board[k][j];
+    }
+    if(sumR == -5 || sumC == -5)
+    {
+        int ans = 0;
+        for(auto row : board)
+        {
+            for(auto elem : row)
+            {
+                if(elem != -1)
+                    ans += elem;
+            }
+        }
+        return ans;
+    }
+    return -1;
+}
+
+int updateBoards(vector<vector<vector<int>>> &boards, int num)
 {
     for(int idx = 0; idx < boards.size(); idx++)
     {
@@ -49,44 +74,13 @@ void updateBoards(vector<vector<vector<int>>> &boards, int num)
                 if(boards[idx][i][j] == num)
                 {
                     boards[idx][i][j] = -1;
+                    int ans = checkBoard(boards[idx], i, j);
+                    if(ans != -1)
+                        return ans;
                 }   
             }
         }
     }
-}
-
-int winNum(vector<vector<vector<int>>> boards)
-{
-    for(auto board : boards)
-    {
-        for(int i = 0; i < 5; i++)
-        {
-            if(board[i][i] == -1)
-            {
-                int sumR = 0;
-                int sumC = 0;
-                for(int j = 0; j < 5; j++)
-                {
-                    sumR += board[i][j];
-                    sumC += board[j][i];
-                }
-                if(sumR == -5 || sumC == -5)
-                {
-                    int ans = 0;
-                    for(auto row : board)
-                    {
-                        for(auto elem : row)
-                        {
-                            if(elem != -1)
-                                ans += elem;
-                        }
-                    }
-                    return ans;
-                }
-            }
-        }
-    }
-
     return -1;
 }
 
@@ -94,8 +88,7 @@ void bingo(vector<int> calledNums, vector<vector<vector<int>>> boards)
 {
     for(auto num : calledNums)
     {
-        updateBoards(boards, num);
-        int win = winNum(boards);
+        int win = updateBoards(boards, num);
         if(win != -1)
         {
             cout << num << " * " << win;

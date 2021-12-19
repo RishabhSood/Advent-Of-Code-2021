@@ -26,5 +26,8 @@ Adding my C++ sols here just for fun xD.
   > [Part 1](https://adventofcode.com/2021/day/5#:~:text=Hydrothermal%20Venture) 
   > [Part 2](https://adventofcode.com/2021/day/5#:~:text=%2D%2D%2D-,Part%20Two,-%2D%2D%2D)
 - [x] Day 6: Lanternfish 
-  > [Part 1 & 2](https://adventofcode.com/2021/day/6#:~:text=%2D%2D%2D%20Day%206%3A-,Lanternfish,-%2D%2D%2D)
+  > [Part 1 & 2](https://adventofcode.com/2021/day/6)
+- [x] Day 7: The Treachery of Whales 
+  > [Part 1 & 2](https://adventofcode.com/2021/day/7)
+
 

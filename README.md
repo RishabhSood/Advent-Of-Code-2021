@@ -1,4 +1,4 @@
-#  [Advent-of-Code-2021](https://adventofcode.com/) ![](https://img.shields.io/badge/days%20completed-3-red) ![](https://img.shields.io/badge/stars%20⭐-7-yellow)
+#  [Advent-of-Code-2021](https://adventofcode.com/) ![](https://img.shields.io/badge/days%20completed-4-red) ![](https://img.shields.io/badge/stars%20⭐-8-yellow)
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
 ![image](https://user-images.githubusercontent.com/55499929/146315763-b4282c42-4024-408a-bb05-f2d86c4b3563.png)
@@ -21,4 +21,4 @@ Adding my C++ sols here just for fun xD.
   > [Part 2](https://adventofcode.com/2021/day/3#:~:text=.-,%2D%2D%2D%20Part%20Two%20%2D%2D%2D,-Next%2C%20you%20should)
 - [x] Day 4: Giant Squid 
   > [Part 1](https://adventofcode.com/2021/day/4#:~:text=%2D%2D%2D%20Day%204%3A%20Giant%20Squid%20%2D%2D%2D) 
-  > [Part 2]()
+  > [Part 2](https://adventofcode.com/2021/day/4#:~:text=.-,%2D%2D%2D%20Part%20Two%20%2D%2D%2D,-On%20the%20other)

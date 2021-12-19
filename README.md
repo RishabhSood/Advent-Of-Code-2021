@@ -1,4 +1,4 @@
-#  [Advent-of-Code-2021](https://adventofcode.com/) ![](https://img.shields.io/badge/days%20completed-5-red) ![](https://img.shields.io/badge/stars%20⭐-10-yellow)
+#  [Advent-of-Code-2021](https://adventofcode.com/) ![](https://img.shields.io/badge/days%20completed-6-red) ![](https://img.shields.io/badge/stars%20⭐-12-yellow)
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
 ![image](https://user-images.githubusercontent.com/55499929/146315763-b4282c42-4024-408a-bb05-f2d86c4b3563.png)
@@ -25,3 +25,6 @@ Adding my C++ sols here just for fun xD.
 - [x] Day 5: Hydrothermal Venture 
   > [Part 1](https://adventofcode.com/2021/day/5#:~:text=Hydrothermal%20Venture) 
   > [Part 2](https://adventofcode.com/2021/day/5#:~:text=%2D%2D%2D-,Part%20Two,-%2D%2D%2D)
+- [x] Day 6: Lanternfish 
+  > [Part 1 & 2](https://adventofcode.com/2021/day/6#:~:text=%2D%2D%2D%20Day%206%3A-,Lanternfish,-%2D%2D%2D)
+

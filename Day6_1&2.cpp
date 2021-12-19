@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void processFish(vector<int> &fish)
+void processFish(vector<long long> &fish)
 {
     string s;
     cin >> s;
@@ -13,9 +13,9 @@ void processFish(vector<int> &fish)
     }
 }
 
-void manipulate(vector<int> &fish)
+void manipulate(vector<long long> &fish)
 {
-    int spawn = fish[0];
+    long long spawn = fish[0];
     for(int i = 0; i < fish.size() - 1; i++)
     {
         fish[i] = fish[i+1];
@@ -25,15 +25,15 @@ void manipulate(vector<int> &fish)
 }
 
 int main() {
-    vector<int> fish(9);
+    vector<long long> fish(9);
     processFish(fish);
 
-    for(int i = 0; i < 80; i++)
+    for(int i = 0; i < 256; i++)
     {
         manipulate(fish);
     }
 
-    int sum = 0;
+    long long sum = 0;
     for(auto elem : fish)
         sum += elem;
     cout << sum;

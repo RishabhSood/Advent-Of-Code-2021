@@ -30,3 +30,5 @@ Adding my C++ sols here just for fun xD.
   > [Part 1 & 2](https://adventofcode.com/2021/day/9)
 - [x] Day 10: Syntax Scoring
   > [Part 1 & 2](https://adventofcode.com/2021/day/10)
+- [x] Day 11: Dumbo Octopus
+  > [Part 1 & 2](https://adventofcode.com/2021/day/10)

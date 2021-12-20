@@ -1,4 +1,4 @@
-#  [Advent-of-Code-2021](https://adventofcode.com/) ![](https://img.shields.io/badge/days%20completed-9-red) ![](https://img.shields.io/badge/stars%20⭐-18-yellow)
+#  [Advent-of-Code-2021](https://adventofcode.com/) ![](https://img.shields.io/badge/days%20completed-10-red) ![](https://img.shields.io/badge/stars%20⭐-20-yellow)
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
 ![image](https://user-images.githubusercontent.com/55499929/146315763-b4282c42-4024-408a-bb05-f2d86c4b3563.png)

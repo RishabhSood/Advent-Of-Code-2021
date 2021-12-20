@@ -11,20 +11,15 @@ Adding my C++ sols here just for fun xD.
 
 ### Completed Challenges:
 - [x] Day 1: Sonar Sweep 
-  > [Part 1](https://adventofcode.com/2021/day/1#:~:text=%2D%2D%2D%20Day%201%3A%20Sonar%20Sweep%20%2D%2D%2D)
-  > [Part 2](https://adventofcode.com/2021/day/1#:~:text=.-,%2D%2D%2D%20Part%20Two%20%2D%2D%2D,-Considering%20every%20single)
+  > [Part 1 & 2](https://adventofcode.com/2021/day/1)
 - [x] Day 2: Dive! 
-  > [Part 1](https://adventofcode.com/2021/day/2#:~:text=%2D%2D%2D%20Day%202%3A%20Dive!%20%2D%2D%2D) 
-  > [Part 2](https://adventofcode.com/2021/day/2#:~:text=.-,%2D%2D%2D%20Part%20Two%20%2D%2D%2D,-Based%20on%20your)
+  > [Part 1 & 2](https://adventofcode.com/2021/day/2)
 - [x] Day 3: Binary Diagnostic 
-  > [Part 1](https://adventofcode.com/2021/day/3#:~:text=%2D%2D%2D%20Day%203%3A%20Binary%20Diagnostic%20%2D%2D%2D) 
-  > [Part 2](https://adventofcode.com/2021/day/3#:~:text=.-,%2D%2D%2D%20Part%20Two%20%2D%2D%2D,-Next%2C%20you%20should)
+  > [Part 1 & 2](https://adventofcode.com/2021/day/3)
 - [x] Day 4: Giant Squid 
-  > [Part 1](https://adventofcode.com/2021/day/4#:~:text=%2D%2D%2D%20Day%204%3A%20Giant%20Squid%20%2D%2D%2D) 
-  > [Part 2](https://adventofcode.com/2021/day/4#:~:text=.-,%2D%2D%2D%20Part%20Two%20%2D%2D%2D,-On%20the%20other)
+  > [Part 1 & 2](https://adventofcode.com/2021/day/4)
 - [x] Day 5: Hydrothermal Venture 
-  > [Part 1](https://adventofcode.com/2021/day/5#:~:text=Hydrothermal%20Venture) 
-  > [Part 2](https://adventofcode.com/2021/day/5#:~:text=%2D%2D%2D-,Part%20Two,-%2D%2D%2D)
+  > [Part 1 & 2](https://adventofcode.com/2021/day/5)
 - [x] Day 6: Lanternfish 
   > [Part 1 & 2](https://adventofcode.com/2021/day/6)
 - [x] Day 7: The Treachery of Whales 

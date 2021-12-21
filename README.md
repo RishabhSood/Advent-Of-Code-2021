@@ -36,3 +36,5 @@ Adding my C++ sols here just for fun xD.
   > [Part 1 & 2](https://adventofcode.com/2021/day/12)
 - [x] Day 13: Transparent Origami
   > [Part 1 & 2](https://adventofcode.com/2021/day/13)
+- [x] Day 14: Extended Polymerization
+  > [Part 1 & 2](https://adventofcode.com/2021/day/14)

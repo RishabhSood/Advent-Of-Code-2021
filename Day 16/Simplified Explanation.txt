@@ -1,0 +1,14 @@
+step 1 -> Convert to hexadecimal representation
+note 1.1 -> single packet containing many other packets
+note 1.2 -> Representaion might pack a few extra 0 bits at the end (must be ignored)
+note 1.3 -> Each packet begins with Packet Version (3 Bits) followed by Type ID (3 bits)
+note 1.4 -> Type ID 4 : Literal Value
+		Literal values are numbers represented in 4 bit chunks of binary (where all chunks
+		except the last have a leading 1, the later having a leading 0).
+note 1.5 -> Type ID != 4 : Operator Packet
+		Perform some calculations on packets contained within. Bit followed by Type ID in 
+		this case is called the length type ID:	
+		- length type ID = 0 : next 15 bits are a number that represents the total length 
+		  in bits of the sub-packets contained by this packet.
+		- length type ID = 1 : next 11 bits are a number that represents the number of 
+		  sub-packets immediately contained by this packet.

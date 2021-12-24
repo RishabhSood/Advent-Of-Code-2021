@@ -117,13 +117,34 @@ int parsePacket(string packet, int idx, stack<int> &st)
             st.push(mx);
         } else if(type == 5) {
             // greater than
-            st.push(-1);
+            int first = stNew.top();
+            stNew.pop();
+            int second = stNew.top();
+            stNew.pop();
+            if(first > second)
+                st.push(1);
+            else
+                st.push(0);
         } else if(type == 6) {
             // less than
-            st.push(-1);
+            int first = stNew.top();
+            stNew.pop();
+            int second = stNew.top();
+            stNew.pop();
+            if(first < second)
+                st.push(1);
+            else
+                st.push(0);
         } else {
             // equal to
-            st.push(-1);
+            int first = stNew.top();
+            stNew.pop();
+            int second = stNew.top();
+            stNew.pop();
+            if(first == second)
+                st.push(1);
+            else
+                st.push(0);
         }
 
         show(stNew);

@@ -1,9 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int versionDump = 0;
-
-void show(stack<int> st)
+void show(stack<long long> st)
 {
     while(!st.empty())
     {
@@ -13,7 +11,7 @@ void show(stack<int> st)
     cout << endl;
 }
 
-int parsePacket(string packet, int idx, stack<int> &st)
+int parsePacket(string packet, int idx, stack<long long> &st)
 {
     if(idx >= packet.size())
         return -1;
@@ -26,13 +24,12 @@ int parsePacket(string packet, int idx, stack<int> &st)
     int ver = stoi(s, 0, 2);
     idx += 3;
     // cout << "version (" << s << ") : " << ver << endl;
-    versionDump += ver;
 
     // get type
     s = packet.substr(idx, 3);
     int type = stoi(s, 0, 2);
     idx += 3;
-    cout << "type (" << s << ") : " << type << endl;
+    // cout << "type (" << s << ") : " << type << endl;
 
     if(type == 4) {
         string num;
@@ -54,14 +51,16 @@ int parsePacket(string packet, int idx, stack<int> &st)
             idx += 5;
         }
 
-        st.push(stoi(num, 0, 2));
-        // cout << "val (" << num << ") : " << stoi(num, 0, 2) << endl;
+        st.push(stoll(num, 0, 2));
+        // cout << "val (" << num << ") : " << stoll(num, 0, 2) << endl;
     } else {
         // length type ID
         char ltID = packet[idx];
         // cout << "ltID : " << ltID << endl;
         idx++;
-        stack<int> stNew;
+
+        stack<long long> stNew;
+
         if(ltID == '0') {
             string tlen = packet.substr(idx, 15);
             idx += 15;
@@ -81,7 +80,7 @@ int parsePacket(string packet, int idx, stack<int> &st)
 
         if(type == 0) {
             // sum
-            int sum = 0;
+            long long sum = 0;
             while(!stNew.empty())
             {
                 sum += stNew.top();
@@ -90,7 +89,7 @@ int parsePacket(string packet, int idx, stack<int> &st)
             st.push(sum);
         } else if(type == 1) {
             // product
-            int prod = 1;
+            long long prod = 1;
             while(!stNew.empty())
             {
                 prod *= stNew.top();
@@ -99,55 +98,48 @@ int parsePacket(string packet, int idx, stack<int> &st)
             st.push(prod);
         } else if(type == 2) {
             // minimum
-            int mn = INT_MAX;
+            long long mn = LLONG_MAX;
             while(!stNew.empty())
             {
-                mn *= min(mn, stNew.top());
+                mn = min(mn, stNew.top());
                 stNew.pop();
             }
             st.push(mn);
         } else if(type == 3) {
             // maximum
-            int mx = INT_MIN;
+            long long mx = LLONG_MIN;
             while(!stNew.empty())
             {
-                mx *= max(mx, stNew.top());
+                mx = max(mx, stNew.top());
                 stNew.pop();
             }
             st.push(mx);
-        } else if(type == 5) {
-            // greater than
-            int first = stNew.top();
-            stNew.pop();
-            int second = stNew.top();
-            stNew.pop();
-            if(first > second)
-                st.push(1);
-            else
-                st.push(0);
-        } else if(type == 6) {
-            // less than
-            int first = stNew.top();
-            stNew.pop();
-            int second = stNew.top();
-            stNew.pop();
-            if(first < second)
-                st.push(1);
-            else
-                st.push(0);
         } else {
-            // equal to
-            int first = stNew.top();
+            long long second = stNew.top();
             stNew.pop();
-            int second = stNew.top();
+            long long first = stNew.top();
             stNew.pop();
-            if(first == second)
-                st.push(1);
-            else
-                st.push(0);
-        }
 
-        show(stNew);
+            if(type == 5) {
+                // greater than
+                if(first > second)
+                    st.push(1);
+                else
+                    st.push(0);
+            } else if(type == 6) {
+                // less than
+                if(first < second)
+                    st.push(1);
+                else
+                    st.push(0);
+            } else {
+                // equal to
+                if(first == second)
+                    st.push(1);
+                else
+                    st.push(0);
+            }
+        }
     }
 
     return idx;
@@ -177,7 +169,10 @@ int main() {
     {
         binPacket.append(hexParser[c]);
     }
+
+    stack<long long> st;
+
     // cout << binPacket << endl;
-    stack<int> st;
     parsePacket(binPacket, 0, st);
+    show(st);
 }

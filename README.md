@@ -40,3 +40,5 @@ Adding my C++ sols here just for fun xD.
   > [Part 1 & 2](https://adventofcode.com/2021/day/14)
 - [x] Day 15: Chiton
   > [Part 1 & 2](https://adventofcode.com/2021/day/15)
+- [x] Day 16: Packet Decoder 
+  > [Part 1 & 2](https://adventofcode.com/2021/day/16)
